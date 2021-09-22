@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head><title>UAT Space Program</title>
+   </head>
+     <body>
+       <center>
+<img src="/Programming/UATspaceLogo-1">
+<h2>UAT Space Program</h2>
+<p>This is a <b>cool</b> website!</p>
+<p>With all sorts of features someday! Don't worry though, it'll be great once it's done!</p>
+<input type="button" value="Start" onclick="alert('This button has now been used, congrats!')">
+     </center>
+   </body>
+</html>

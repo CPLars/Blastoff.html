@@ -44,20 +44,17 @@ function myFunction() {
  
     var timeleft = 50;
     var downloadTimer = setInterval(function(){
-        timeleft--;
+        timeleft = timeleft - 1 //timeleft - 5//
         document.getElementById("Countdown").textContent = timeleft;
-    if(timeleft <= 0){
-        if(timeleft > 25){
-            document.getElementById("Countdown").textContent = timeleft;
+    if(timeleft == 0){
+        clearInterval(downloadTimer);
+        document.getElementById('myimage').style.display = 'block';
+        document.getElementById("Countdown").textContent = "";
+    }else if(timeleft < 25){
+            document.getElementById("Countdown").textContent = "Warning! Less than 25 seconds left to launch! Time left: " + timeleft;
         }
-    else {
-        document.getElementById("Countdown").textContent ="Warning! Less than 25 seconds left to launch! Time left: " + timeleft;
-
-    }
-        } else {
-    document.getElementById('myimage').style.display = 'block';
-        clearInterval(downloadTimer);}
-    },1000);
+    
+        },1000);//1000//
     document.getElementById("Countdown").style.color = 'white'; document.getElementById("Countdown").style.fontSize = "x-large";
 };
 </script>
